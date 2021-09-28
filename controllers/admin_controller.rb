@@ -1,29 +1,30 @@
 require "tty-prompt"
-
-    
+require "./utils/utils"
+require "./views/admin/admin"
 
   class Admin
-    def initialize (adminName = "samiul", adminPassword = "admin")
+    def initialize (adminName = "root", adminPassword = "admin")
         @@admin = adminName 
         @@adminPassword = adminPassword 
     end
 
-
     def self.index
-  
+        Utils.clear
         puts "What is your name?"
         answer=gets.chomp.downcase
         if answer == @@admin
-            puts "correct"
+            Utils.clear
+            Admin_view::menu
+              
         else 
-            puts "incorrect username"
+            puts "You are not Admin!!!"
         end
-
     end
 
-    def self.print 
-    p    @@admin 
-    p @@adminPassword
-    end 
+    def self.admin_choice
+        Utils.clear
+        
+    end
+  
   end  
 
