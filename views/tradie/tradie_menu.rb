@@ -6,7 +6,7 @@ require "./controllers/tradie_controller"
 class Tradie_menu
       
     def self.greet
-          Utils.clear
+        #   Utils.clear
         puts "What is your name?"
         @tradiename = gets.chomp.upcase.strip
         menu()
@@ -20,9 +20,10 @@ class Tradie_menu
         choose = prompt.select("What Would you like to do?", choices)
            case choose
     when  1
-    TradieController.new
+         Views::Tradies.new_tradie 
+
     when  2  
-       
+       puts "delete"
     end
 
  

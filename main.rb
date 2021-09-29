@@ -7,7 +7,6 @@ require "./views/user/user_menu"
 newAdmin=Admin.new()
 
 begin
-    Utils.clear
     font = TTY::Font.new(:doom)
     pastel = Pastel.new  
     puts pastel.cyan(font.write("Welcome To Trade AU"))

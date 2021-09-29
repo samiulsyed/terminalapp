@@ -1,12 +1,13 @@
 class Tradie
-   
+   attr_accessor :businessname, :contact_num, :email, :trade 
 
 
     def initialize (business_name, contact_number, email, trade )
      @businessname = business_name   
      @contact_num = contact_number
      @email = email 
-     self.trade = trade
+     @trade = trade
+    #  self.trade = @trade
      @valid=false
     end
 
@@ -21,11 +22,16 @@ class Tradie
     def valid?
         @valid
     end
-
-    def save
-        super
+    def print_name 
+        puts @businessname
+        puts @email 
+        puts @trade
+        puts @contact_num
+    end 
+    # def save
+    #     super
         
-    end
+    # end
        def [](index)
         puts "This is great!"
     end

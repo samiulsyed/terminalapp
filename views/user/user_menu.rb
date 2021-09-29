@@ -3,7 +3,7 @@ require "./utils/utils"
 class User_menu
       
     def self.greet
-          Utils.clear
+        #   Utils.clear
         puts "What is your name?"
         @username = gets.chomp.upcase.strip
         menu()
