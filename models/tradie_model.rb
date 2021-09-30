@@ -1,7 +1,7 @@
 class Tradie
    attr_accessor :businessname, :contact_num, :email, :trade 
 
-
+    
     def initialize (business_name, contact_number, email, trade )
      @businessname = business_name   
      @contact_num = contact_number
