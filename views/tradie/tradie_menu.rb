@@ -6,7 +6,6 @@ require "./controllers/tradie_controller"
 class Tradie_menu
       
     def self.greet
-        #   Utils.clear
         puts "What is your name?"
         @tradiename = gets.chomp.upcase.strip
         menu()

@@ -1,0 +1,22 @@
+---
+- !ruby/object:Tradie
+  businessname: plumber
+  contact_num: '298374'
+  trade: sam@email.com
+  email: plumber
+  valid: false
+  id: 1
+- !ruby/object:Tradie
+  businessname: electrician
+  contact_num: '2093840'
+  trade: eceltrician@gmail.com
+  email: Electrician
+  valid: false
+  id: 2
+- !ruby/object:Tradie
+  businessname: plumbing pty ltd
+  contact_num: '092384028'
+  trade: plumber
+  email: sam@plumber.com.au
+  valid: false
+  id: 3

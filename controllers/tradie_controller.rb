@@ -15,17 +15,13 @@ class TradieController
     end
 
     def new_tradiec (business_name, contact_number, trade, email)
-        puts business_name + "ctroller"
-        puts contact_number + "ctroller"
-        puts trade + "ctroller"
-        puts email + "ctroller"
-       tradie = Tradie.new(business_name,contact_number,trade, email)
-      puts "#{tradie.print_name} model " 
+        tradie = Tradie.new(business_name,contact_number,trade, email)
+       tradie.save 
     end
 
-    # def save
-    #     super
+    def save
+        super
         
-    # end
+    end
 
 end

@@ -7,7 +7,7 @@ class TradieRecord
     attr_reader :id
 
     def self.db
-        @db ||= YAML.load(File.read(tradie)) rescue []
+        @db ||= YAML.load(File.read('tradie.yml')) rescue []
     end
 
     def self.file_name
@@ -30,7 +30,8 @@ class TradieRecord
     end
     
        def save
-        # self is the instance that wants to be saved
+    
         self.class.save(self) { |id| @id = id }
         self
-    end
+    # end
+end

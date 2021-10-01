@@ -4,7 +4,7 @@ require 'tty-table'
 module Views
     module Tradies
         def self.index(tradies)
-            return puts "No recipes!" if tradies.empty?
+            return puts "No Tradies!" if tradies.empty?
 
             headers = %w[Id Title Difficulty]
             rows = table_rows_for recipes
