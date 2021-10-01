@@ -1,13 +1,13 @@
 
 require 'yaml'
 
-class TradieRecord
+class QuoteRecord
     class RecordNotFound < StandardError; end
 
     attr_reader :id
 
     def self.db
-        @db ||= YAML.load(File.read('tradie.yml')) rescue []
+        @db ||= YAML.load(File.read('quote.yml')) rescue []
     end
 
     def self.file_name

@@ -20,3 +20,10 @@
   email: sam@plumber.com.au
   valid: false
   id: 3
+- !ruby/object:Tradie
+  businessname: plumber
+  contact_num: '234980'
+  trade: plumber
+  email: sam@plumber.com.au
+  valid: false
+  id: 4

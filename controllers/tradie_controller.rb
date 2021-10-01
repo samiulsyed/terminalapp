@@ -10,8 +10,6 @@ class TradieController
     def show(id)
         tradie = Tradie.find(id)
         Views::Tradies.show tradie
-    # rescue ActiveRecord::RecordNotFound => exception
-    #     Views::Recipes.record_not_found exception
     end
 
     def new_tradiec (business_name, contact_number, trade, email)
@@ -21,7 +19,6 @@ class TradieController
 
     def save
         super
-        
     end
 
 end
