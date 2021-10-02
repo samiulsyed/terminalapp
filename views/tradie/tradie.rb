@@ -3,7 +3,7 @@ require "./controllers/tradie_controller"
 module Views
     module Tradies
         def self.new_tradie
-            puts "Please Enter your Business Name!"
+            puts "Please Enter your Business Details!"
             print "Business Name: "
             business_name = gets.chomp.strip
             print "Please Enter Your Contact Number: "

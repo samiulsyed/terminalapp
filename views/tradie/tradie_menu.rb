@@ -17,7 +17,8 @@ class Tradie_menu
         prompt = TTY::Prompt.new
         choices = {Add_My_Business: 1, Delete_My_Business: 2, Quote_A_Job: 3}
         choose = prompt.select("What Would you like to do?", choices)
-           case choose
+    
+    case choose
     when  1
          Views::Tradies.new_tradie 
 

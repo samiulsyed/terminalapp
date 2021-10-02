@@ -1,13 +1,16 @@
-class Quote
+require_relative  "./quote_record"
+
+class Quote < QuoteRecord
+    class RecordNotFound < StandardError; end
    attr_accessor :trade, :jobdiscription, :contactperson, :contactnumber 
-    QUOTES[]
+
 
     def initialize (trade, jobdiscription , contactperson, contactnumber )
      @trade = trade   
-     @jobdiscription = job_discription
+     @jobdiscription = jobdiscription
      @contactperson = contactperson
      @contactnumber = contactnumber
-    #  self.trade = @trade
+     self.trade = @trade
      @valid=false
     end
 

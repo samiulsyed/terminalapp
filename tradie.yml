@@ -27,3 +27,10 @@
   email: sam@plumber.com.au
   valid: false
   id: 4
+- !ruby/object:Tradie
+  businessname: pearl studio
+  contact_num: 98273498]
+  trade: Engineer
+  email: sam@devgenius.com.au
+  valid: false
+  id: 5

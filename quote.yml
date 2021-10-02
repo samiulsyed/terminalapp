@@ -1,0 +1,8 @@
+---
+- !ruby/object:Quote
+  trade: plumber
+  jobdiscription: need bathroom fixed
+  contactperson: sammy
+  contactnumber: '92387492'
+  valid: false
+  id: 1
