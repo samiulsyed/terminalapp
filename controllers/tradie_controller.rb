@@ -25,5 +25,8 @@ class TradieController
     def save
         super
     end
-
+     def self.destroy(id)
+        tradie = Tradie.find(id)
+        tradie.destroy
+    end
 end

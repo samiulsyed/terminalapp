@@ -1,8 +1,11 @@
 ---
+-
+-
+-
 - !ruby/object:Tradie
-  businessname: plumbing and co
-  contact_num: '8927394'
-  trade: Plumber
-  email: info@plumber.com
+  businessname: Electricity pty ltd
+  contact_num: "04999999"
+  trade: Electrician
+  email: sam@electricity.com.au
   valid: false
-  id: 1
+  id: 4

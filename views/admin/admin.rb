@@ -18,7 +18,7 @@ class Admin_view
         TradieController.index
         print "Please enter the ID you would like to delete? "
         answer = gets.chomp.strip.to_i
-        # TradieController.destroy(answer)
+        TradieController.destroy(answer)
     
         end
     end

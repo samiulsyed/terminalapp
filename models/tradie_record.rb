@@ -33,4 +33,25 @@ class TradieRecord
         self.class.save(self) { |id| @id = id }
         self
     end
+        def self.find(id)
+        tradierecord = self.db.detect { |t| t.id == id.to_i }
+        raise RecordNotFound.new(id) unless tradierecord
+
+        tradierecord
+    end
+        def self.destroy(tradierecord)
+        # self = ActiveRecord
+        return false if tradierecord.nil? # guard
+
+        idx = db.index { |obj| obj.id == tradierecord.id }
+        db[idx] = nil
+        File.open(file_name, 'w') do |file|
+            file.write(self.db.to_yaml)
+        end
+    end
+
+    def destroy
+        # self here is the instance
+        self.class.destroy(self)
+    end
 end

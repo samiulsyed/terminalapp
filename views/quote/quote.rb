@@ -20,7 +20,7 @@ module Views
 
 
         def thankyou 
-            puts "Thank you have added you to our list"
+            puts "Thank you have added you to our list" 
             puts "Please check back in to"
 
         end 
