@@ -1,10 +1,11 @@
-require "./views/tradie/index"
-require "./views/tradie/tradie"
+require "./views/quote/index"
+require "./views/quote/quote"
 require "./models/quote_model"
+
 class QuoteController
     def self.index
-        quote = Quote.all.compact
-        # Tradie::Tradies.index(tradies)
+        quotes = Quote.all.compact
+        Views::Quotes.index(quotes)
     end
 
     def show(id)
