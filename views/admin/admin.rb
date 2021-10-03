@@ -2,6 +2,7 @@ require "tty-font"
 require "./views/tradie/tradie"
 require "./controllers/tradie_controller"
 require "./models/tradie_model"
+require "./controllers/request_controller"
 
 
 class Admin_view
@@ -9,7 +10,7 @@ class Admin_view
     def self.menu
         admin_page()
         prompt = TTY::Prompt.new
-        choices = {Add_Tradie: 1, Delete_Tradie: 2}
+        choices = {Add_Tradie: 1, Delete_Tradie: 2, List_Requests: 3 }
         user_input = prompt.select("What Would you like to do?", choices)
         case user_input 
         when 1 
@@ -19,7 +20,8 @@ class Admin_view
         print "Please enter the ID you would like to delete? "
         answer = gets.chomp.strip.to_i
         TradieController.destroy(answer)
-    
+        when 3 
+            RequestController.index
         end
     end
 

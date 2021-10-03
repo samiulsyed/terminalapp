@@ -13,7 +13,7 @@ module Views
 
         def self.table_rows_for(requests)
             requests.map do |request|
-                [request.id,  request.businessname, request.contactnumber, request.contactperson, tradie.requestdiscription]
+                [request.id,  request.businessname, request.contactnumber, request.contactperson, request.requestdiscription]
         end
         end
         
