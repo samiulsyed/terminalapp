@@ -8,11 +8,6 @@ class QuoteController
         Views::Quotes.index(quotes)
     end
 
-    def show(id)
-        quote = Quote.find(id)
-        # Views::Tradies.show tradie
-    end
-
     def new_quotec (trade, jobdiscription, contactperson, contactnumber)
         quote = Quote.new(trade, jobdiscription, contactperson, contactnumber)
        quote.save 

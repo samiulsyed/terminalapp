@@ -12,11 +12,6 @@ class TradieController
         Views::Tradies.index(tradies)
     end
 
-    def show(id)
-        tradie = Tradie.find(id)
-        Views::Tradies.show tradie
-    end
-
     def new_tradiec (business_name, contact_number, trade, email)
         tradie = Tradie.new(business_name,contact_number,trade, email)
        tradie.save 

@@ -21,13 +21,7 @@ class Quote < QuoteRecord
         @trade = trade
         @valid = !(@trade.nil? || @trade.empty?)
     end
-    
 
-
-    # def save
-    #     super
-        
-    # end
     def [](index)
         puts "This is great!"
     end

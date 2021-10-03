@@ -9,11 +9,11 @@ require "./views/admin/admin"
     end
 
     def self.index
-        # Utils.clear
+        
         puts "What is your name?"
         answer=gets.chomp.downcase
         if answer == @@admin
-            # Utils.clear
+         
             Admin_view::menu
               
         else 
@@ -22,7 +22,7 @@ require "./views/admin/admin"
     end
 
     def self.admin_choice
-        # Utils.clear
+
         
     end
   
