@@ -14,4 +14,4 @@ Customers
 
 Admin
 
-Admin can be access with special username: - only available for educators and real admin.
+Admin can be access with special username: - only available for educators and real admin
