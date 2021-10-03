@@ -10,7 +10,7 @@ class Tradie < TradieRecord
      @contact_num = contact_number
      @trade = trade
      @email = email 
-    #  self.trade = @trade
+  
      @valid=false
     end
 

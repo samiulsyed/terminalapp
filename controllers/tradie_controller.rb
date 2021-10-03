@@ -1,5 +1,3 @@
-
-  
 require "./views/tradie/index"
 require "./views/tradie/tradie"
 require "./models/tradie_model"

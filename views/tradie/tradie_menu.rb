@@ -4,6 +4,7 @@ require "./views/tradie/tradie"
 require "./controllers/tradie_controller"
 require "./controllers/quote_controller"
 require "./views/request/request"
+
 class Tradie_menu
       
     def self.greet

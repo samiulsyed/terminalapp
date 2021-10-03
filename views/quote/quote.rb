@@ -1,23 +1,23 @@
 require "./controllers/quote_controller"
 require  "tty-progressbar"
 require "pastel"
-            
+require 'colorize'
 module Views
     module Quotes
         def self.new_quote
 
             barprogress()
-            puts "Whats Trade are you looking for? eg Plumber, electrician, carpenter....!"
-            print "Trade: "
+            puts "Whats Trade are you looking for? eg Plumber, electrician, carpenter....!".red
+            print "Trade: ".blue
             trade = gets.chomp.strip
-            print "Please describe the work you require? "
+            print "Please describe the work you require? ".blue
             jobdiscription = gets.chomp.strip
-            print "Please advise name of best contact person? "
+            print "Please advise name of best contact person? ".blue
             contactperson = gets.chomp.strip
-            print "Please Enter Your Contact Number? "
+            print "Please Enter Your Contact Number? ".blue
             contactnumber = gets.chomp.strip
             barprogress()
-            puts "One of our parter tradies will be in contact with you shortly!"
+            puts "One of our parter tradies will be in contact with you shortly!".blue
             new_quote_controller = QuoteController.new
             new_quote_controller.new_quotec(trade, jobdiscription, contactperson, contactnumber)
             
