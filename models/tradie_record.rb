@@ -40,8 +40,8 @@ class TradieRecord
         tradierecord
     end
         def self.destroy(tradierecord)
-        # self = ActiveRecord
-        return false if tradierecord.nil? # guard
+    
+        return false if tradierecord.nil? 
 
         idx = db.index { |obj| obj.id == tradierecord.id }
         db[idx] = nil
@@ -51,7 +51,7 @@ class TradieRecord
     end
 
     def destroy
-        # self here is the instance
+     
         self.class.destroy(self)
     end
 end
