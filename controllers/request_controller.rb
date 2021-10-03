@@ -6,8 +6,8 @@ require "./models/request_model"
 
 class RequestController
     def self.index
-        request = Tradie.all.compact
-        Views::Tradies.index(tradies)
+        requests = Tradie.all.compact
+        Views::Tradies.index(requests)
     end
 
     def new_request (businessname, contactnumber, contactperson, requestdiscription)
