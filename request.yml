@@ -1,0 +1,13 @@
+---
+- !ruby/object:Request
+  businessname: pearl
+  contactnumber: '298374'
+  contactperson: sam
+  requestdiscription: i want you to delete me of your app!
+  id: 1
+- !ruby/object:Request
+  businessname: pearluni
+  contactnumber: '29387492'
+  contactperson: sam
+  requestdiscription: delete me
+  id: 2

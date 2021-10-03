@@ -1,13 +1,13 @@
-require "./views/tradie/index"
-require "./views/tradie/tradie"
+require "./views/request/index"
+require "./views/request/request"
 require "./models/request_model"
 
 
 
 class RequestController
     def self.index
-        requests = Tradie.all.compact
-        Views::Tradies.index(requests)
+        requests = Request.all.compact
+        Views::Requests.index(requests)
     end
 
     def new_request (businessname, contactnumber, contactperson, requestdiscription)

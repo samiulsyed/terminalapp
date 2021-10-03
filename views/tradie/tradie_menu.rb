@@ -3,6 +3,7 @@ require "./utils/utils"
 require "./views/tradie/tradie"
 require "./controllers/tradie_controller"
 require "./controllers/quote_controller"
+require "./views/request/request"
 class Tradie_menu
       
     def self.greet
@@ -23,7 +24,7 @@ class Tradie_menu
          Views::Tradies.new_tradie 
 
     when  2  
-       puts "delete"
+       Views::Requests.new_request
 
     when 3 
         QuoteController.index

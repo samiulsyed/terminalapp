@@ -1,6 +1,6 @@
-require_relative  "./quote_record"
+require_relative  "./request_record"
 
-class Request 
+class Request < RequestRecord
    attr_accessor :businessname, :contactnumber, :contactperson, :requestdiscription 
 
 
