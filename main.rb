@@ -5,7 +5,8 @@ require "./utils/utils"
 require "./views/tradie/tradie_menu"
 require "./views/user/user_menu"
 newAdmin=Admin.new()
-
+#  run main app by ruby main.rb 
+#  app begins here 
 begin
     font = TTY::Font.new(:doom)
     pastel = Pastel.new  
@@ -18,10 +19,12 @@ begin
     case user_input
     when  3
        Admin::index 
+    #    to admin menu 
     when  2   
         Tradie_menu.greet
+    #  to tradie menu 
     when  1
-
+        # to user menu 
         User_menu.greet
     
     end

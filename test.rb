@@ -2,7 +2,7 @@ require './controllers/tradie_controller'
 require './controllers/request_controller'
 
 begin 
-# test quote request controller  
+# test quote  request and tradie delete functions   
  puts "what would you like to test? "
  answer = gets.chomp.strip.to_i
  case answer   

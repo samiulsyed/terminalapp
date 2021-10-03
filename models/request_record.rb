@@ -17,7 +17,7 @@ class RequestRecord
 
     def self.all
         self.db
-    end
+    end 
     
 
        def self.save(record)
