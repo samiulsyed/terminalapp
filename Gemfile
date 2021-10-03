@@ -15,3 +15,5 @@ gem "tty-box", "~> 0.7.0"
 gem "tty-progressbar", "~> 0.18.2"
 
 gem "tty-prompt", "~> 0.23.1"
+
+gem 'colorize', '~> 0.8.1'

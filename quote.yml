@@ -13,3 +13,24 @@
   contactnumber: '8927394'
   valid: false
   id: 2
+- !ruby/object:Quote
+  trade: electrician
+  jobdiscription: i need new lights
+  contactperson: sam
+  contactnumber: '92837492'
+  valid: false
+  id: 3
+- !ruby/object:Quote
+  trade: plumber
+  jobdiscription: need kitchen fixed
+  contactperson: sam
+  contactnumber: '2093748'
+  valid: false
+  id: 4
+- !ruby/object:Quote
+  trade: gardener
+  jobdiscription: i need to do landscaping in my backyard
+  contactperson: sam
+  contactnumber: '234235'
+  valid: false
+  id: 5

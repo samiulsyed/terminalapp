@@ -11,3 +11,9 @@
   contactperson: sam
   requestdiscription: delete me
   id: 2
+- !ruby/object:Request
+  businessname: electrical
+  contactnumber: '928374'
+  contactperson: chris
+  requestdiscription: take me off your app!!
+  id: 3
