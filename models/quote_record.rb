@@ -17,8 +17,6 @@ class QuoteRecord
     def self.all
         self.db
     end
-    
-
        def self.save(record)
         # self is the class object ActiveRecord
         new_id = self.db.length + 1

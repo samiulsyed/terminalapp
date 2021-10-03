@@ -1,36 +1,8 @@
 ---
 - !ruby/object:Tradie
-  businessname: plumber
-  contact_num: '298374'
-  trade: sam@email.com
-  email: plumber
+  businessname: plumbing and co
+  contact_num: '8927394'
+  trade: Plumber
+  email: info@plumber.com
   valid: false
   id: 1
-- !ruby/object:Tradie
-  businessname: electrician
-  contact_num: '2093840'
-  trade: eceltrician@gmail.com
-  email: Electrician
-  valid: false
-  id: 2
-- !ruby/object:Tradie
-  businessname: plumbing pty ltd
-  contact_num: '092384028'
-  trade: plumber
-  email: sam@plumber.com.au
-  valid: false
-  id: 3
-- !ruby/object:Tradie
-  businessname: plumber
-  contact_num: '234980'
-  trade: plumber
-  email: sam@plumber.com.au
-  valid: false
-  id: 4
-- !ruby/object:Tradie
-  businessname: pearl studio
-  contact_num: 98273498]
-  trade: Engineer
-  email: sam@devgenius.com.au
-  valid: false
-  id: 5

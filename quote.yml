@@ -6,3 +6,10 @@
   contactnumber: '92387492'
   valid: false
   id: 1
+- !ruby/object:Quote
+  trade: plumber
+  jobdiscription: i need my kitchen tap fixed
+  contactperson: sam
+  contactnumber: '8927394'
+  valid: false
+  id: 2

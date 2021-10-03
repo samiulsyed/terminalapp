@@ -2,7 +2,7 @@ require "./views/tradie/index"
 require "./views/tradie/tradie"
 require "./models/quote_model"
 class QuoteController
-    def index
+    def self.index
         quote = Quote.all.compact
         # Tradie::Tradies.index(tradies)
     end

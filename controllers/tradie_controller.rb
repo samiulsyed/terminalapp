@@ -1,10 +1,15 @@
+
+  
 require "./views/tradie/index"
 require "./views/tradie/tradie"
 require "./models/tradie_model"
+
+
+
 class TradieController
-    def index
-        tradie = Tradie.all.compact
-        Tradie::Tradies.index(tradies)
+    def self.index
+        tradies = Tradie.all.compact
+        Views::Tradies.index(tradies)
     end
 
     def show(id)

@@ -1,4 +1,3 @@
-
 require 'tty-table'
 
 module Views
@@ -6,16 +5,17 @@ module Views
         def self.index(tradies)
             return puts "No Tradies!" if tradies.empty?
 
-            headers = %w[Id Title Difficulty]
-            rows = table_rows_for recipes
+            headers = %w[Id Business Contact Trade Email]
+            rows = table_rows_for tradies
             table = TTY::Table.new headers, rows
             puts table.render(:ascii)
         end
 
         def self.table_rows_for(tradies)
             tradies.map do |tradie|
-                [tradie.id, tradie.trade, tradie.business_name]
-            end
+                [tradie.id,  tradie.businessname, tradie.contact_num, tradie.trade, tradie.email]
         end
+        end
+        
     end
 end

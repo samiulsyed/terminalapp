@@ -24,5 +24,7 @@ module Views
             puts "Please check back in to"
 
         end 
+
+       
     end
 end

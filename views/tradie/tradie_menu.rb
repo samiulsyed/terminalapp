@@ -2,7 +2,7 @@ require "tty-font"
 require "./utils/utils"
 require "./views/tradie/tradie"
 require "./controllers/tradie_controller"
-    
+require "./controllers/quote_controller"
 class Tradie_menu
       
     def self.greet
@@ -24,7 +24,12 @@ class Tradie_menu
 
     when  2  
        puts "delete"
+
+    when 3 
+        QuoteController.index
+        back_to_menu()
     end
+
 
  
     end
@@ -35,6 +40,17 @@ class Tradie_menu
         sleep(0.5)
     
     end
+
+        def self.back_to_menu
+        print "please contact customer asap!"
+        puts "would you like to go back to main menu? please type y for yes and n for no"
+        answer = gets.chomp.strip
+        if answer == "y"
+            menu()
+        else answer == "n"
+         puts "Thank you for using Trade Au"
+        end 
+    end 
 
     
 end

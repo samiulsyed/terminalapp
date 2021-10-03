@@ -1,4 +1,5 @@
 
+
 require 'yaml'
 
 class TradieRecord
@@ -20,7 +21,6 @@ class TradieRecord
     
 
        def self.save(record)
-        # self is the class object ActiveRecord
         new_id = self.db.length + 1
         yield(new_id)
         self.db << record
@@ -30,7 +30,6 @@ class TradieRecord
     end
     
        def save
-        # self is the instance that wants to be saved
         self.class.save(self) { |id| @id = id }
         self
     end
